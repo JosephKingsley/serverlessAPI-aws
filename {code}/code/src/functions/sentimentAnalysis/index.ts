@@ -20,7 +20,7 @@ try {
     const response = await analyseSentiment({ text});
     return formatJSONResponse(response);
 } catch (error) {
-    console.errror(error);
+    console.error(error);
     return {
         statusCode: 500,
         body: JSON.stringify({ message: error.message})
